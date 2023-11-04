@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Route,Routes,Link, BrowserRouter} from 'react-r
 export default function App() {
     return (
       <BrowserRouter>
-        <div className="background">
+        <div>
           <Routes>
           <Route path='' element={<SignupPage/>} />
             <Route path='/signup' element={<SignupPage/>} />

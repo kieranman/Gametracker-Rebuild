@@ -34,6 +34,7 @@ useEffect(() => {
 }, [message]);
 
     return(
+        <div className="background">
         <div className="signup-container">
         {message && <div className="message-container"><h3>{message}</h3></div>}
             <form className="signup-form" onSubmit={handleSubmit}>
@@ -59,6 +60,7 @@ useEffect(() => {
             <div className="account">   
             <a><Link to="/signup">Dont have an account</Link></a>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,13 +1,24 @@
 import "./RelatedStyles.css"
 import Card from "../components/Card";
 import "./GamePage.css"
+import Modal from "../components/Modal";
+import Navbar from "../components/Navbar";
 import { useState,useEffect } from "react";
 import axios from "axios";
 export default function GamePage(){
-    
+
+    const [openModal,setOpenModal] = useState(false);
     const [games,setGames]=useState([]);
+
+    const handleModalOpen = () =>{
+        setOpenModal(true)
+    }
+    const handleCloseModal = ()=>{
+        setOpenModal(false)
+    }
+
     const renderedGames = games.map((game)=>{
-        return <Card key={game.id} item={game}/>;
+        return <Card key={game.id} item={game} openModal={handleModalOpen}/>;
     })
 
     const getGames = async ()=>{
@@ -23,9 +34,12 @@ export default function GamePage(){
     },[])
 
     return(
+        <div className="games-container">
+        {openModal && <Modal closeModal={handleCloseModal}/>}
+        <Navbar/>
             <div className="card-container">
             {renderedGames}
             </div>
-   
+        </div>
     )
 }

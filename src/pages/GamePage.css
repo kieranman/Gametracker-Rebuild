@@ -1,9 +1,15 @@
-.card-container{
+.card-container {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    gap:30px;
-    width: 1600px;
-    height: 100%;
-    margin-top: 100px;
-}
-
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    max-height: 100vh; /* Adjust the maximum height as needed */
+    max-width: 1600px;
+    margin-top: 120px;
+    
+  }
+  
+.games-container {
+    justify-content: center;
+    display: flex;
+  }
+  

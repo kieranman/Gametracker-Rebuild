@@ -1,4 +1,5 @@
 import "./SignupPage.css";
+import "./RelatedStyles.css"
 import {useState,useEffect,useContext} from 'react';
 import Avatar from "../images/avatar3.png"; 
 import AuthService from "../service/AuthService";
@@ -34,7 +35,7 @@ useEffect(() => {
 }, [message]);
 
     return(
-            
+        <div className="background">
         <div className="signup-container">
         {message && <div className="message-container"><h3>{message}</h3></div>}
             <form className="signup-form" onSubmit={handleSubmit}>
@@ -67,6 +68,7 @@ useEffect(() => {
             <div className="account">   
             <a><Link to="/login">Already have an account</Link></a>
             </div>
+        </div>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import { CircularProgressbar ,buildStyles } from 'react-circular-progressbar';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { useState,useEffect } from "react";
 import 'react-circular-progressbar/dist/styles.css';
-export default function Card({ item }) {
+export default function Card({ item ,openModal }) {
   const [isIconVisible,setIsIconVisible] = useState(false)
 
   const getCover = () => {
@@ -58,7 +58,7 @@ export default function Card({ item }) {
         {renderRating()}
       </div>
       <div className={`plus-container ${isIconVisible ? "icon-visible" : ""}`}>
-        <AiOutlinePlusCircle size={50} border="2px solid black" color="#5294e2" />
+        <AiOutlinePlusCircle size={50} border="2px solid black" color="#5294e2" onClick={openModal} />
       </div>
       <img src={getCover()} alt="Game Cover" />
       <div className="title-container"><h4>{item.name}</h4></div>

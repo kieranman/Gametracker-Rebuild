@@ -1,0 +1,40 @@
+nav{
+    background-color:#323a51;
+    margin-top: 0px;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    color: #5294e2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    
+}
+nav li,a{
+    list-style: none;
+    color:white;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px;
+    grid-column: span 12;
+    font-size: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+nav ul p {
+    display: flex;
+    justify-content: center;
+}
+nav ul a:hover{
+    color: #5294e2;
+}
