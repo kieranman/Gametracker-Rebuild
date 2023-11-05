@@ -8,9 +8,7 @@ export default function Card({ item ,openModal }) {
 
   const getCover = () => {
     let cover = item.cover.url;
-    console.log("Original URL:", cover);
     let newCover = cover.replace("t_thumb","t_cover_big")
-    console.log("Replaced URL:", newCover);
     return newCover;
   }
 
@@ -58,7 +56,7 @@ export default function Card({ item ,openModal }) {
         {renderRating()}
       </div>
       <div className={`plus-container ${isIconVisible ? "icon-visible" : ""}`}>
-        <AiOutlinePlusCircle size={50} border="2px solid black" color="#5294e2" onClick={openModal} />
+        <AiOutlinePlusCircle size={50} border="2px solid black" color="#5294e2" onClick={() => openModal(item)} />
       </div>
       <img src={getCover()} alt="Game Cover" />
       <div className="title-container"><h4>{item.name}</h4></div>

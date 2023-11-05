@@ -15,6 +15,7 @@
 /* Modal Box */
 .modal-box {
     position: relative;
+
     
     
 }
@@ -88,4 +89,20 @@
 
 .add-form .add-button:hover{
   box-shadow: 0 15px 15px 0 rgba(0,0,0,0.3);
+}
+
+.message-container{
+  position: relative;
+  width: 50%;
+  height: 50px;
+  background-color:#def2d6;
+  border-radius: 5px;
+  color: #5a7052;
+  border:4px solid #b0cca5; 
+}
+.outer-message-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: -50px;
 }

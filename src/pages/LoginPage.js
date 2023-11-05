@@ -17,8 +17,7 @@ const handleSubmit = (event) => {
     event.preventDefault();
     AuthService.login(username,password).then(
         () => {
-           const user = AuthService.getCurrentUser();
-           console.log(user);
+           navigate("/games")
       });
     }
 const handleChangeUsername = (event)=>{
