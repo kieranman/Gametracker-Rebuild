@@ -1,6 +1,6 @@
 
 .signup-container{
-  position: absolute;
+  position: relative;
 }
   .signup-form {
     background-color: rgba(0, 0, 0, 0.4);
@@ -55,8 +55,8 @@
 
   .message-container{
       position: absolute;
-      margin-top: -150px;
-      width: 400px;
+      margin-bottom: 70px;
+      min-width: 400px;
       height: 50px;
       background-color:#def2d6;
       border-radius: 5px;

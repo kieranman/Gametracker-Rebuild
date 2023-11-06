@@ -1,0 +1,8 @@
+.recommended-container{
+    display: flex;
+    flex-grow: 1;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

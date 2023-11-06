@@ -17,8 +17,8 @@ export default function Navbar(){
         <nav>
             <ul>
                 <li><Link to="/games"><p><IoGameControllerSharp size={20}/></p>Games</Link></li>
-                <li><p><IoListCircleSharp size={20}/></p>My List</li>
-                <li><p><MdOutlineRecommend size={20}/></p>Recommended</li>
+                <li><Link to="/list"><p><IoListCircleSharp size={20}/></p>My List</Link></li>
+                <li><Link to="/recommended"><p><MdOutlineRecommend size={20}/></p>Recommended</Link></li>
                 <li onClick={handleLogout}><p><IoLogOut size={20}/></p>Logout</li>
             </ul>
         </nav>

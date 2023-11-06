@@ -1,0 +1,66 @@
+table{
+    margin-top: 75px;
+    max-width: 1400px;
+    border-collapse:collapse;
+    overflow-y:scroll;
+    height: 722px;
+    display:block;
+
+}
+
+table th{
+    background-color:#323a51;
+}
+table tr{
+    background-color: #282f41;
+}
+
+tr:nth-child(odd) {
+    background-color: #3c4561;
+    color: #fff;
+  }
+
+
+
+table th,td{
+    padding: 10px;
+    text-align: left;
+}
+
+.image{
+    width: 90px;
+}
+.title{
+    width: 400px;
+}
+.rating{
+
+    width: 50px;
+}
+.status{
+
+    width: 150px;
+}
+.review{
+    width: 400px;
+}
+
+table::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+table::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+table::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+table:hover::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+table:hover::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}

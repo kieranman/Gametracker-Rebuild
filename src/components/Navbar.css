@@ -3,7 +3,7 @@ nav{
     margin-top: 0px;
     height: 70px;
     width: 100%;
-    position: absolute;
+    position: relative;
     color: #5294e2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);

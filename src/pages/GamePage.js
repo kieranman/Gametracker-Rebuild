@@ -22,7 +22,7 @@ export default function GamePage(){
         return <Card key={game.id} item={game} openModal={handleModalOpen}/>;
     })
 
-    const getGames = async ()=>{
+    const getGames = async (page)=>{
         axios.post("http://localhost:8080/gameapi/games/07fl0geh1ox6h94fieyazqjuc5d4xy").then
         (response=>response.data).then
         ((data)=>{
